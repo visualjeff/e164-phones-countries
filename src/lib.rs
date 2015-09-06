@@ -1,5 +1,5 @@
-#![feature(test)]
-extern crate test;
+//#![feature(test)]
+//extern crate test;
 
 use std::collections::HashMap;
 
