@@ -17,7 +17,7 @@ fn find_phone_cc_test() {
     assert_eq!("", find_phone_cc("ZZ"));
 }
 
-pub fn find_iso_3166(phone:&str) -> &str {
+pub fn find_iso_3166(phone:&str) -> &'static str {
     let mut phone_prefix = HashMap::new();
 	    phone_prefix.insert(1201, "US");
 	    phone_prefix.insert(1202, "US");
@@ -663,7 +663,7 @@ pub fn find_iso_3166(phone:&str) -> &str {
         };
 }
 
-pub fn find_phone_cc(code:&str) -> &str {
+pub fn find_phone_cc(code:&str) -> &'static str {
 	let mut iso_3166 = HashMap::new();
 		iso_3166.insert("US", "1");
 		iso_3166.insert("CA", "1");

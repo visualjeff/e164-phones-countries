@@ -17,6 +17,6 @@ use e164-phones-countries::find_phone_cc;
 
 Methods signatures:
 ```rust
-fn find_iso_3166(phone:&str) -> &str
-fn find_phone_cc(code:&str) -> &str
+fn find_iso_3166(phone:&str) -> &'static str
+fn find_phone_cc(code:&str) -> &'static str
 
